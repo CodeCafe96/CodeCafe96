@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sign in form</title>
+  <link href="img/top_theme.png" rel="Shortcut icon" type="image/png" />
+  <link href="css/contact.css" rel="stylesheet" type="image/css" />
+</head>
+
+<body>
+  <h1>Please fill your information:</h1><br>
+  <form>
+    First name: <input type="text" name="first_name" />
+    <br>
+    Last name: <input type="text" name="last_name" /><br>
+    Bio : <br />
+    <textarea rows="2" cols="50" name="bio">
+            Enter bio here...
+         </textarea><br>
+    <input type="checkbox" name="agecheck" /><label>Check if you are above 18 years old!!!</label>
+    <br>
+
+    <input type="radio" name="subject" value="student"> Student
+    <input type="radio" name="subject" value="employee"> Employee
+
+    <label for="jobs">Job Title:</label>
+    <select id="jobs" name="jobs">
+      <optgroup label="Social">
+        <option value="volvo">Doctor</option>
+        <option value="saab">Engineer</option>
+      </optgroup>
+      <optgroup label="Art">
+        <option value="mercedes">Singer</option>
+        <option value="audi">Poet</option>
+      </optgroup>
+    </select>
+
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+    </fieldset>
+    <br>
+    <input type="reset" name="reset" value="Reset" /> &nbsp;&nbsp;&nbsp;
+    <input type="submit">
+
+  </form>
+</body>
+
+</html>
